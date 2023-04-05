@@ -8,7 +8,7 @@ I use:
 
      - Mobile First
      - HTML
-     - CSS
+     - SCSS
      - FlexBox 
      - BEM
 

@@ -1,0 +1,45 @@
+.header {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        margin-right: 20px;
+    }
+    &__phone {
+        font-size: 16px;
+        line-height: 80px;
+        color: #1E266D;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__contact-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .header {
+        justify-content: flex-start;
+        &__phone {
+            margin-left: auto;
+        }
+        &__contact-btn {
+            display: block;
+            margin-left: 35px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        &__phone {
+            order: 1;
+        }
+        &__contact-btn {
+            order: 1;
+        }
+    }
+}

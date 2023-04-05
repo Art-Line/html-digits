@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body class="body">
-    <header class="header container"></header>
-    <main>
+    <header class="header container">
+        <a href="#" class="header__logo" aria-label="to main">
+            <img src="./img/logo.svg" width="81" height="33" alt="">
+        </a>
+        <a class="header__phone" href="tel:+14381234678">+1 438 123 46 78</a>
+        <button type="button" class="btn btn_sm btn_blue header__contact-btn">Contact Us</button>
+        <nav class="menu">
+            <button type="button" class="menu__btn"></button>
+            <ul class="menu__list">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
         <section class="intro">
             <div class="container"></div>
         </section>
@@ -23,6 +40,61 @@
             <div class="container"></div>
         </section>
     </main>
-    <footer class="footer container"></footer>
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="footer__info">
+                <a class="footer__logo" href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <p class="footer__info-text">Digits is a website template built to work seamlesly with the WordPress block editor to create
+                    beautifully designed pages in minutes.</p>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu-col">
+                    <div class="footer__menu-title">Pages</div>
+                    <ul class="footer__menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-col">
+                    <div class="footer__menu-title">Demos</div>
+                    <ul class="footer__menu-list">
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Boxy</a></li>
+                        <li><a href="#">Gradient</a></li>
+                        <li><a href="#">Minimal</a></li>
+                        <li><a href="#">Night</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__resources">
+                <div class="footer__menu-title">Resources</div>
+                <ul class="social">
+                    <li><a class="social__item social__item_fb" href="#" aria-label="link to facebook"></a></li>
+                    <li><a class="social__item social__item_inst" href="#" aria-label="link to instagram"></a></li>
+                    <li><a class="social__item social__item_twitter" href="#" aria-label="link to twitter"></a></li>
+                    <li><a class="social__item social__item_dribbble" href="#" aria-label="link to dribbble"></a></li>
+                    <li><a class="social__item social__item_envato" href="#" aria-label="link to envato"></a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li><a href="#">Download now</a></li>
+                    <li><a href="#">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bot">
+            <div class="footer__copy">Copyright © 2023</div>
+            <ul class="footer__bot-menu">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">GDPR</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
