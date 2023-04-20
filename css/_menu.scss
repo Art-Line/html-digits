@@ -32,6 +32,7 @@
             padding: 30px;
             box-shadow: 0 5px 5px rgba(0,0,0,0.1);
             width: 100%;
+            display: none;
             li {
                 &:not(:last-child) {
                     padding-bottom: 15px;
@@ -66,7 +67,7 @@
             position: static;
             display: flex;
             li {
-                padding-right: 50px;
+                padding-right: 52px;
             }
             a {
                 &:hover {

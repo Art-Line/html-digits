@@ -1,0 +1,101 @@
+.reviews {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    &__title {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    &__item {
+        padding-bottom: 30px;
+        &-box {
+            padding: 20px 25px;
+            border: 1px solid rgba(69, 88, 128, 0.2);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.8em;
+            color: #455880;
+            padding-bottom: 20px;
+            margin-bottom: auto;
+        }
+        &-pic {
+            text-align: center;
+            margin-bottom: 20px;
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+        &-name {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.25em;
+            color: #1E266D;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &-label {
+            font-size: 18px;
+            line-height: 1.25em;
+            text-align: center;
+            color: #455880;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .reviews {
+        padding-top: 100px;
+        padding-bottom: 80px;
+        &__title {
+            padding-bottom: 55px;
+        }
+        &__item {
+            &-box {
+                padding: 25px 30px;
+            }
+            &-text {
+                font-size: 18px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .reviews {
+        padding-top: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .reviews {
+        padding-top: 150px;
+        padding-bottom: 120px;
+        &__title {
+            text-align: center;
+            padding-bottom: 55px;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        &__item {
+            width: 33.333%;
+            padding: 0 15px 30px;
+            &-box {
+                height: 100%;
+                padding: 37px 43px;
+            }
+            &-text {
+                padding-bottom: 55px;
+            }
+        }
+    }
+}

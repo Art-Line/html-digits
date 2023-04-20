@@ -40,3 +40,28 @@ html{
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.h2-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25em;
+    color: #1E266D;
+}
+
+@media (min-width: 576px) {
+    .h2-title {
+        font-size: 38px;
+    }
+}
+
+@media (min-width:  768px) {
+    .h2-title {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 992px) {
+    .h2-title {
+        font-size: 48px;
+    }
+}

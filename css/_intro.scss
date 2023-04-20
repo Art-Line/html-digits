@@ -1,4 +1,68 @@
 .intro {
-    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
-    padding-top: 144px;
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 83%, #ffffff 83%);
+    padding-top: 44px;
+    padding-bottom: 25px;
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.05em;
+        text-align: center;
+        color: #1E266D;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 28px;
+    }
+    &__description {
+        font-size: 18px;
+        line-height: 1.5em;
+        text-align: center;
+        color: #455880;
+        padding-bottom: 29px;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        & > * {
+            margin-bottom: 12px;
+        }
+    }
+    &__pic {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .intro { 
+        padding-top: 74px;
+        &__title {
+            font-size: 42px;
+        }
+        &__buttons {
+            flex-direction: row;
+            & > * {
+                margin: 0 12px 12px;
+            }
+        }
+    }
+}
+
+@media (min-width:  768px) {
+    .intro { 
+        padding-top: 104px;
+        &__title {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .intro { 
+        padding-top: 144px;
+        &__title {
+            font-size: 56px;
+        }
+    }
 }
