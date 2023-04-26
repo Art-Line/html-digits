@@ -1,5 +1,5 @@
 .trusted {
-    padding-bottom: 150px;
+    padding-bottom: 40px;
     &__title {
         font-weight: 400;
         font-size: 16px;
@@ -19,8 +19,15 @@
     }
 }
 
+@media (min-width: 768px) {
+    .trusted {
+        padding-bottom: 90px;
+    }
+}
+
 @media (min-width: 992px) {
     .trusted {
+        padding-bottom: 150px;
         &__list {
             justify-content: space-between;
         }

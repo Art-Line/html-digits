@@ -1,6 +1,85 @@
 .able-help {
-    padding-bottom: 150px;
+    padding-bottom: 40px;
     &__title {
         text-align: center;
+        max-width: 500px;
+        margin: 0 auto; 
+        padding-bottom: 38px;
+    }
+    &__pic {
+        max-width: 320px;
+        margin: 0 auto 40px;
+    }
+    &__item {
+        background-repeat: no-repeat;
+        background-size: 40px auto;
+        padding-left: 62px;
+        &:not(:last-child) {
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+            margin-bottom: 25px;
+        }
+        &_01 {
+            background-image: url('../img/ico-work-01.svg');
+        }
+        &_02 {
+            background-image: url('../img/ico-work-02.svg');
+        }
+        &_03 {
+            background-image: url('../img/ico-work-03.svg');
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.25em;
+            color: #1E266D;
+            padding-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5em;
+            color: #455880;
+        }
+    }
+}
+
+@media (min-width:  768px) {
+    .able-help {
+        padding-bottom: 90px;
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 -15px;
+        }
+        &__pic {
+            width: 50%;
+            padding: 0 15px;
+        }
+        &__info {
+            max-width: 407px;
+            padding: 0 15px;
+        }
+        &__item {
+            padding-left: 102px;
+            background-size: 59px auto;
+            &:not(:last-child) {
+                padding-bottom: 45px;
+                margin-bottom: 45px;
+            }
+            h3 {
+                font-size: 22px;
+                padding-bottom: 30px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width:  992px) {
+    .able-help {
+        padding-bottom: 150px;
     }
 }
